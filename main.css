@@ -1,11 +1,78 @@
+
+
+/*testing out the dropdown: https://www.youtube.com/watch?v=960mgtEarfs
+
+ */
+
+
 body {
     margin: 0;
     height: 100vh;
     background: url("css/image/universe.jpg");
+}
+.dropdown {
+    margin: 0 auto;
+}
+nav {
+    height: 60px;
+    background: #997984;
+    box-shadow: 0 10px 15px rgba(0,0,0, 0.1);
+}
 
+/*.logo{
+    padding: 5px 0 0 80px;
+    width: 150px;
+    height: auto;
+    font-family: "Apple SD Gothic Neo";
+    font-size: medium;
+}
 
+ */
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li {
+    background: #997984;
+    position: relative;
+    list-style: none;
+    display: inline-block;
 
 }
+
+nav ul li a {
+    display: block;
+    padding: 0 15px;
+    color: white;
+    text-decoration: none;
+    line-height: 60px;
+    font-size: 20px;
+}
+nav ul li a:hover {
+    background: dimgray;
+}
+nav ul ul {
+    position: absolute;
+    top: 60px;
+    display: none;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    width: 150px;
+    float: none;
+    display: list-item;
+    position: relative;
+}
+
+
+
+
 
 .title {
     color: azure;
